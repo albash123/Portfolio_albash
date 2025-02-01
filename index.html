@@ -1256,56 +1256,30 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST"
-                                    action="mail.php">
 
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="contact-name">Your Name</label>
-                                            <input class="form-control form-control-lg" name="contact-name"
-                                                id="contact-name" type="text">
-                                        </div>
+                                <form action="https://api.web3forms.com/submit" method="POST" class="col-lg-10">
+                                    <input type="hidden" name="access_key" value="5467e2b5-0c64-4f7e-8f0d-3c3c488b6343">
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" name="name" class="form-control" required>
                                     </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="contact-phone">Phone Number</label>
-                                            <input class="form-control" name="contact-phone" id="contact-phone"
-                                                type="text">
-                                        </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="email" class="form-control" required>
                                     </div>
 
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="contact-email">Email</label>
-                                            <input class="form-control form-control-sm" id="contact-email"
-                                                name="contact-email" type="email">
-                                        </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Message</label>
+                                        <textarea name="message" class="form-control" rows="3" required></textarea>
                                     </div>
 
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="subject">subject</label>
-                                            <input class="form-control form-control-sm" id="subject" name="subject"
-                                                type="text">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label for="contact-message">Your Message</label>
-                                            <textarea name="contact-message" id="contact-message" cols="30"
-                                                rows="10"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <button name="submit" type="submit" id="submit" class="rn-btn">
-                                            <span>SEND MESSAGE</span>
-                                            <i data-feather="arrow-right"></i>
-                                        </button>
-                                    </div>
+                                    <button type="submit" class="btn btn-dark w-100 h-30">Submit Form</button>
                                 </form>
+
+
+
                             </div>
                         </div>
                     </div>
